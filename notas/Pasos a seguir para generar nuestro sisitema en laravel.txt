@@ -1,0 +1,30 @@
+
+
+*	creamos nuestra aplicacion en laravel 
+	composer create-project --prefer-dist laravel/laravel (nombre)
+
+
+*	cambiar nombre de nuestro sistema en laravel
+	(app por defecto)
+	en artisan
+	php artisan app:name SysCamiiLaravel
+	aqui se cambio tb el nombre de nuestro NAMESPACE a SysCamiiLaravel
+	cambiar atributos de config/app.php
+
+*	'debug' => env('APP_DEBUG', true), 
+	(esto cambia a modo debug o modo de desarrollo para que nos de detalle de los errores)
+
+*	'timezone' => 'America/Lima',  
+	(cambiamos a nuestra zona horaria)
+
+*	'locale' => 'es', 
+	(cambiamos el idioma de nuestra aplicacion)
+
+*	descargar el repocitorio de idioma de github
+	elegir los idiomas necesarios
+	incluir los idiomas en la carpeta resources/lang 
+ 
+*	php artisan make:model GenerateCodigoProducto -m
+	(aqui generamos un modelo y migracion para el generador de codigos de los PRODUCTOS)
+
+
