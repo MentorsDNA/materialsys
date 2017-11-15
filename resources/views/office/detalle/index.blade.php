@@ -5,11 +5,11 @@
 <div class="content">
     <div class="container-fluid">
 
-        @include ('office.layouts.forms.form-banco')
+        @include ('office.layouts.forms.form-detalle')
             @yield('formulario')  
 
 
-        @include ('office.layouts.tables.tab-banco')
+        @include ('office.layouts.tables.tab-detalle')
             @yield('tabla')  
 
     </div>
