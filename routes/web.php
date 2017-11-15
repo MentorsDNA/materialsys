@@ -21,8 +21,33 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-
-
-
 Route::resource('bancos', 'BancoController');
+Route::resource('cuentas', 'CuentaController');
+Route::resource('titulares', 'TitulareController');
+Route::resource('depositos', 'DepositoController');
+Route::get('proveedores/{id}', 'DepositoController@verProv');
 
+
+Route::resource('detalle', 'DetalleController');
+Route::resource('caracteristica', 'CaracteristicaController');
+
+
+Route::resource('compras', 'CompraController');
+Route::resource('ventas', 'VentaController');
+
+
+Route::resource('envioinformacion', 'EnvioInformacionController');
+Route::resource('enviodetalle', 'EnvioDetalleController');
+
+
+Route::resource('proveedores', 'ProveedoreController');
+Route::resource('empresas', 'EmpresaController');
+Route::resource('razonsocial', 'RazonSocialController');
+Route::resource('marcas', 'MarcaController');
+
+
+Route::resource('preciocompra', 'PrecioCompraController');
+Route::resource('precioventa', 'PrecioVentaController');
+
+
+Route::resource('novedades', 'NovedadeController');

@@ -2,7 +2,7 @@
 
 <div class="row">
 
-    @include ('office.layouts.links.lnk-banco')
+    @include ('office.layouts.links.lnk-transaccion')
         @yield('vinculo')
 
     <div class="col-sm-10 col-md-8 col-lg-6">

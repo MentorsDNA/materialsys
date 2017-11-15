@@ -13,11 +13,6 @@ Tip 2: you can also add an image using data-image tag
     <div class="sidebar-wrapper">
         <ul class="nav">
 
-            <?php
-                function activeMenu($url){
-                    return request()->is($url) ? 'active' : '';
-                }
-            ?>
 
             <li class="{{ activeMenu('home') }}">
                 <a href="{{ route ('home')}}">
@@ -32,7 +27,7 @@ Tip 2: you can also add an image using data-image tag
                     <p> Transacciones </p>
                 </a>
             </li>
-            <li class="{{ activeMenu('detalle')}} {{activeMenu('caracteristica')}">
+            <li class="{{ activeMenu('detalle')}} {{activeMenu('caracteristica')}}">
                 <a href="{{ route ('detalle.index')}}">
                     <i class="material-icons">view_module</i>
                     <p> Productos </p>
@@ -63,7 +58,7 @@ Tip 2: you can also add an image using data-image tag
                 </a>
             </li>
             <li class="{{ activeMenu('preciocompra')}} {{ activeMenu('precioventa')}}">
-                <a href="{{ route ('precios.index')}}">
+                <a href="{{ route ('preciocompra.index')}}">
                     <i class="material-icons text-gray">monetization_on</i>
                     <p> Precio </p>
                 </a>
