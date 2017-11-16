@@ -15,7 +15,7 @@
 
                 <form method="POST" action="{{route('proveedores.store')}}">
                     {!! csrf_field() !!}
-                    
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group label-floating">
@@ -28,13 +28,13 @@
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Apellido Paterno</label>
-                                <input name="apellido_paterno" type="email" class="form-control">
+                                <input name="apellido_paterno" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Apellido Materno</label>
-                                <input name="apellido_materno" type="email" class="form-control">
+                                <input name="apellido_materno" type="text" class="form-control">
                             </div>
                         </div>
                     </div>
