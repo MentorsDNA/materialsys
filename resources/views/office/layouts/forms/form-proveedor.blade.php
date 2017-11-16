@@ -1,11 +1,11 @@
 @section('formulario')
 
-<div class="row">
+<div class="">
 
-    @include ('office.layouts.links.lnk-banco')
+    @include ('office.layouts.links.lnk-proveedor')
         @yield('vinculo')
 
-    <div class="col-sm-10 col-md-8 col-lg-6">
+    <div class="col-sm-9 col-md-9 col-lg-9">
         <div class="card">
             <div class="card-header" data-background-color="purple">
                 <h4 class="title">Nuevo Banco</h4>

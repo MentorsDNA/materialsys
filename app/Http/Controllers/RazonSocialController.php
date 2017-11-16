@@ -18,12 +18,13 @@ class RazonSocialController extends Controller
     {
 
         //Guardar
-        $razones = RazonSocial::all();
+        $razonsocial = RazonSocial::all();
+        $empresas = Empresa::all();
         $ltempresas = Empresa::pluck('nombre', 'id'); 
 
 
         //Redireccionar
-        return view('office.razon_social.index', compact('razones', 'ltempresas'));
+        return view('office.razon-social.index', compact('razonsocial', 'empresas'));
 
     }
 

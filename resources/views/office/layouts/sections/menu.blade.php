@@ -27,6 +27,12 @@ Tip 2: you can also add an image using data-image tag
                     <p> Transacciones </p>
                 </a>
             </li>
+            <li class="{{ activeMenu('proveedores')}} {{ activeMenu('empresas')}} {{ activeMenu('razonsocial')}} {{ activeMenu('marcas')}}">
+                <a href="{{ route ('proveedores.index')}}">
+                    <i class="material-icons">business</i>
+                    <p> Proveedores </p>
+                </a>
+            </li>
             <li class="{{ activeMenu('detalle')}} {{activeMenu('caracteristica')}}">
                 <a href="{{ route ('detalle.index')}}">
                     <i class="material-icons">view_module</i>
@@ -49,12 +55,6 @@ Tip 2: you can also add an image using data-image tag
                 <a href="{{ route ('ventas.index')}}">
                     <i class="material-icons text-gray">shopping_cart</i>
                     <p> Ventas </p>
-                </a>
-            </li>
-            <li class="{{ activeMenu('proveedores')}} {{ activeMenu('empresas')}} {{ activeMenu('razonsocial')}} {{ activeMenu('marcas')}}">
-                <a href="{{ route ('proveedores.index')}}">
-                    <i class="material-icons">business</i>
-                    <p> Proveedores </p>
                 </a>
             </li>
             <li class="{{ activeMenu('preciocompra')}} {{ activeMenu('precioventa')}}">

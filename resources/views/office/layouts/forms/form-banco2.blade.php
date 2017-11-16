@@ -12,33 +12,45 @@
                 <p class="category">Completar todas las Celdas</p>
             </div>
             <div class="card-content">
-                <form>
+
+                {!! Form::open(['route' => 'bancos.store', 'method' => 'POST']) !!}
+
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <label class="control-label">Nombre</label>
-                                <input type="text" class="form-control">
+
+                            {!! Form::label('nombre', 'Nombre', ['class' => 'form-control']) !!}
+                            {!! Form::text('nombre', null, ['class' => 'form-control']) !!}
+
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <label class="control-label">Acromino</label>
-                                <input type="email" class="form-control">
+
+                            {!! Form::label('acronimo', 'Acronimo', ['class' => 'form-control']) !!}
+                            {!! Form::text('acronimo', null, ['class' => 'form-control']) !!}
+
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group label-floating">
-                                <label class="control-label">Direccion</label>
-                                <input type="text" class="form-control">
+
+                            {!! Form::label('direccion', 'Direccion', ['class' => 'form-control']) !!}
+                            {!! Form::text('direccion', null, ['class' => 'form-control']) !!}
+
                             </div>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary pull-right">Guardar</button>
-                    <div class="clearfix"></div>
-                </form>
+                            {!! Form::submit('Guardar', ['class' => 'btn btn-primary pull-right'], 'Guardar') !!}
+
+                    <div class="clearfix">
+                    </div>
+
+                {!! Form::close() !!}
+
             </div>
         </div>
     </div>

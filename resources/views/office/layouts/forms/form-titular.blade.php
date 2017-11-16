@@ -8,11 +8,12 @@
     <div class="col-sm-10 col-md-8 col-lg-6">
         <div class="card">
             <div class="card-header" data-background-color="purple">
-                <h4 class="title">Nuevo Banco</h4>
+                <h4 class="title">Nuevo Titular</h4>
                 <p class="category">Completar todas las Celdas</p>
             </div>
             <div class="card-content">
-                <form>
+                <form method="POST" action="{{route('titulares.store')}}">
+                    {!! csrf_field() !!}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
