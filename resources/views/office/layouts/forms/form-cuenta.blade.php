@@ -1,14 +1,14 @@
 @section('formulario')
 
-<div class="row">
+<div class="">
 
     @include ('office.layouts.links.lnk-transaccion')
         @yield('vinculo')
 
-    <div class="col-sm-8 col-md-8 col-lg-8">
+    <div class="col-sm-9 col-md-9 col-lg-9">
         <div class="card">
             <div class="card-header" data-background-color="purple">
-                <h4 class="title">Deposito</h4>
+                <h4 class="title">Nueva Cuenta</h4>
                 <p class="category">ingresa....</p>
             </div>
             <div class="card-content">

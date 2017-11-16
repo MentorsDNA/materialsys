@@ -9,11 +9,13 @@
         <div class="card">
             <div class="card-header" data-background-color="purple">
                 <h4 class="title">Nueva Razon Social</h4>
-                <p class="category">Completar todas las Celdas</p>
+                <p class="category">ingresa....</p>
             </div>
             <div class="card-content">
+
                 <form method="POST" action="{{route('razonsocial.store')}}">
                     {!! csrf_field() !!}
+                    
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">

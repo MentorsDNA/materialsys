@@ -9,11 +9,13 @@
         <div class="card">
             <div class="card-header" data-background-color="purple">
                 <h4 class="title">Nueva Empresa</h4>
-                <p class="category">Completa todos los campos... </p>
+                <p class="category">ingresa....</p>
             </div>
             <div class="card-content">
+
                 <form method="POST" action="{{route('empresas.store')}}">
                     {!! csrf_field() !!}
+                    
                     <div class="col-md-12">
                         <div class="form-group label-floating">
                             <label class="control-label"> Codigo </label>

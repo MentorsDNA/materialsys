@@ -1,18 +1,21 @@
 @section('formulario')
 
-<div class="row">
+<div class="">
 
     @include ('office.layouts.links.lnk-banco')
         @yield('vinculo')
 
-    <div class="col-sm-10 col-md-8 col-lg-6">
+    <div class="col-sm-9 col-md-9 col-lg-9">
         <div class="card">
             <div class="card-header" data-background-color="purple">
-                <h4 class="title">Nuevo Banco</h4>
-                <p class="category">Completar todas las Celdas</p>
+                <h4 class="title">Nuevo Detalle</h4>
+                <p class="category">ingresa....</p>
             </div>
             <div class="card-content">
-                <form>
+
+                <form method="POST" action="{{route('detalle.store')}}">
+                    {!! csrf_field() !!}
+                    
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">

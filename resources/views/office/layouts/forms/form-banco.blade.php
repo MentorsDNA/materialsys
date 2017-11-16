@@ -1,15 +1,15 @@
 @section('formulario')
 
-<div class="row">
+<div class="">
 
     @include ('office.layouts.links.lnk-transaccion')
         @yield('vinculo')
 
-    <div class="col-sm-10 col-md-6 col-lg-5">
+    <div class="col-sm-9 col-md-9 col-lg-9">
         <div class="card">
             <div class="card-header" data-background-color="purple">
                 <h4 class="title">Nuevo Banco</h4>
-                <p class="category">Completar todas las Celdas</p>
+                <p class="category">ingresa....</p>
             </div>
             <div class="card-content">
                 <form method="POST" action="{{route('bancos.store')}}">
