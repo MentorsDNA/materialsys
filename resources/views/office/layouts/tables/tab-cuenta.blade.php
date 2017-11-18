@@ -2,7 +2,7 @@
 
 
 
-<div class=" col-sm-11 col-md-12 col-lg-12 ">
+<div class=" col-sm-12 col-md-12 col-lg-12 ">
     <div class="card">
         <div class="card-header" data-background-color="orange">
             <h4 class="title">Bancos</h4>
