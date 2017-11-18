@@ -6,8 +6,8 @@ Tip 1: You can change the color of the sidebar using: data-color="purple | blue 
 Tip 2: you can also add an image using data-image tag
 -->
     <div class="logo">
-        <a href="#" class="simple-text">
-            Creative Tim
+        <a href="/" class="simple-text">
+            Back Office
         </a>
     </div>
     <div class="sidebar-wrapper">

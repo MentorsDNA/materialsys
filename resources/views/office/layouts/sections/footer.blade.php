@@ -29,7 +29,8 @@
             <script>
                 document.write(new Date().getFullYear())
             </script>
-            <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+            Design By 
+            <a href="http://www.creative-tim.com">Creative Tim</a>, Adapted by <a href="#">&lt; Mentors! &gt;</a>
         </p>
     </div>
 </footer>

@@ -19,12 +19,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <select name="proveedor_id" class="form-control">
-                                    <option value="">Empresa</option>
+                                <select name="banco_id" class="form-control">
+                                    <option value=""> Banco </option>
 
-                                @foreach($empresas as $empresa)
-                                    <option value="{{ $empresa->id }}">
-                                        {{ $empresa->nombre }} 
+                                @foreach($bancos as $banco)
+                                    <option value="{{ $banco->id }}">
+                                        {{ $banco->nombre }} 
                                     </option>
                                 @endforeach
 
@@ -35,7 +35,7 @@
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <select name="proveedor_id" class="form-control">
-                                    <option value="">Titular</option>
+                                    <option value=""> Titular </option>
 
                                 @foreach($proveedores as $proveedor)
                                     <option value="{{ $proveedor->id }}">
@@ -50,8 +50,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <label class="control-label">Nro de Cuenta</label>
-                                <input type="text" class="form-control">
+                                <label class="control-label"> Nro de Cuenta </label>
+                                <input name="numero_cuenta" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -69,15 +69,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group label-floating">
-                                <input type="date" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <hr width="100%">
-                    <button type="submit" class="btn btn-primary pull-right">Guardar</button>
+                    <button type="submit" class="btn btn-primary pull-right"> Guardar </button>
                     <div class="clearfix"></div>
                 </form>
             </div>

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Banco;
 use App\Cuenta;
-use App\Empresa;
 use App\Proveedore;
 use Illuminate\Http\Request;
 
@@ -21,7 +20,6 @@ class CuentaController extends Controller
         //Guardar
             $bancos      = Banco::all();
             $cuentas     = Cuenta::all();
-            $empresas    = Empresa::all();
             $proveedores = Proveedore::all();
 
         //Visualizar para SELECT
@@ -32,7 +30,7 @@ class CuentaController extends Controller
          */
 
         //Redireccionar
-        return view('office.cuenta.index', compact('bancos', 'cuentas', 'empresas', 'proveedores', 'ltbancos'));
+        return view('office.cuenta.index', compact('bancos', 'cuentas', 'proveedores', 'ltbancos'));
 
     }
 

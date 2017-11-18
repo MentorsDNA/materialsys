@@ -11,23 +11,16 @@ class Cuenta extends Model
 	protected $fillable = ['banco_id', 'proveedor_id', 'numero_cuenta', 'moneda'];
 
 
-		// Funcion para reemplazar el id por el nombre de la Empresa
-
-	public function verBanco()
-
+	// Funcion para reemplazar el id por el nombre de la Empresa
+	public function vBanco()
 		{
-
 			return $this->belongsTo('App\Banco', 'banco_id', 'id');
-
 		}
-			// Funcion para reemplazar el id por el nombre de la Empresa
 
-	public function verProveedor()
-
+	// Funcion para reemplazar el id por el nombre de la Empresa
+	public function vProveedor()
 		{
-
 			return $this->belongsTo('App\Proveedore', 'proveedor_id', 'id');
-
 		}
 
 }
