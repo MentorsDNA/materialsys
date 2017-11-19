@@ -48,15 +48,27 @@ class DepositoController extends Controller
 
     }
 
-    public function verProv(Request $request, $id)
+    public function verProveedor(Request $request, $id)
+    {
+        if($request->ajax())
         {
-            if($request->ajax())
-            {
-                $provee = Proveedore::lprooveedor($id);
-                return response()->json($provee); 
-            }
+            $proveedores  = Proveedore::proveedores($id);
+           return response()->json($proveedores); 
         }
 
+    }
+
+
+
+    public function verCuenta(Request $request, $id)
+    {
+        if($request->ajax())
+        {
+            $cuentas  = Cuenta::cuentas($id);
+           return response()->json($cuentas); 
+        }
+
+    }
 
     /**
      * Show the form for creating a new resource.

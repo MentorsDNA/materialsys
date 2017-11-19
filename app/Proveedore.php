@@ -18,10 +18,10 @@ class Proveedore extends Model
 		}
 
 
-	public static function lproveedor($id)
-		{
-			return Proveedore::where('proveedor_empresa_id','=',$id)
-			->get();
-		}
+	public static function proveedores($id)
+	{
+		return Proveedore::where('proveedor_empresa_id','=',$id)
+		->get();
+	}
 
 }

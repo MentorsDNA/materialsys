@@ -8,6 +8,7 @@
 {!! Html::script('js/bootstrap-notify.js') !!}
 {!! Html::script('js/material-dashboard.js?v=1.2.0') !!}
 {!! Html::script('js/demo.js') !!}
+{!! Html::script('js/mat-script.js') !!}
 {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/jquery.dataTables.min.js') !!}
 
 

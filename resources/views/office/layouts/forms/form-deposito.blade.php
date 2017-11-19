@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <select name="empresa" class="form-control">
+                                <select id="llamar_empresa" name="llamar_empresa" class="form-control">
                                     <option value="">Empresa</option>
 
                                 @foreach($empresas as $empresa)
@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <select name="proveedor_empresa_id" class="form-control">
+                                <select id="llamar_titular" name="llamar_titular" class="form-control">
                                     <option value="">Titular</option>
                                 </select>
                             </div>
@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <select name="proveedor_empresa_id" class="form-control">
+                                <select id="deposito_cuenta_id" name="deposito_cuenta_id" class="form-control">
                                     <option value="">Cuenta</option>
                                 </select>
                             </div>
@@ -50,14 +50,14 @@
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Monto</label>
-                                <input type="text" class="form-control">
+                                <input id="monto" name="monto" type="text" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <input type="date" class="form-control">
+                                <input id="fecha_deposito" name="fecha_deposito" type="date" class="form-control">
                             </div>
                         </div>
                     </div>

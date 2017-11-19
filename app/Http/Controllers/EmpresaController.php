@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 
 use App\Empresa;
+use App\Proveedore;
 
 
 class EmpresaController extends Controller

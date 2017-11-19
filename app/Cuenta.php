@@ -23,4 +23,10 @@ class Cuenta extends Model
 			return $this->belongsTo('App\Proveedore', 'proveedor_id', 'id');
 		}
 
+	public static function cuentas($id)
+		{
+			return Cuenta::where('proveedor_id','=',$id)
+			->get();
+		}
+
 }

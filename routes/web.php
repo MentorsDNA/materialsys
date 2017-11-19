@@ -25,7 +25,8 @@ Route::resource('bancos', 'BancoController');
 Route::resource('cuentas', 'CuentaController');
 Route::resource('titulares', 'TitulareController');
 Route::resource('depositos', 'DepositoController');
-Route::get('proveedores/{id}', 'DepositoController@verProv');
+Route::get('proveedores/{id}', 'DepositoController@verProveedor');
+Route::get('cuentas/{id}', 'DepositoController@verCuenta');
 
 
 Route::resource('detalle', 'DetalleController');
