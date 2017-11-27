@@ -47,28 +47,71 @@ class DepositoController extends Controller
         }*/
 
     }
-
+/*
     public function verProveedor(Request $request, $id)
     {
         if($request->ajax())
         {
-            $proveedores  = Proveedore::proveedores($id);
+            $proveedores = Proveedore::proveedores($id);
            return response()->json($proveedores); 
         }
 
     }
 
-
-
     public function verCuenta(Request $request, $id)
     {
         if($request->ajax())
         {
-            $cuentas  = Cuenta::cuentas($id);
+            $cuentas = Cuenta::cuentas($id);
            return response()->json($cuentas); 
         }
 
     }
+*/
+
+
+    public function prodfunct()
+    {
+        $prod = ProductCat::all();
+        return view('productlist',compact('prod'));
+    }
+
+    public function findProductName(Request $request)
+    {
+        $data = Product::select('productname','id')->where('prod_cat_id',$request->id)->take(100)->get();
+        //$request->id
+        return response()->json($data);
+    }
+
+    public function findPrice(Request $request)
+    {
+        $p = Product::select('price')->where('id',$request->id)->first();
+        //$request->id
+        return response()->json($p);
+    }
+////////
+
+
+    public function verEmpresa()
+    {
+        $empresass = Empresa::all();
+        return view('office.deposito.index',compact('empresass'));
+    }
+
+    public function hallarProveedor(Request $request)
+    {
+        $data = Proveedore::select('nombres','id')->where('proveedor_empresa_id',$request->id)->take(10)->get();
+        //$request->id
+        return response()->json($data);
+    }
+
+    public function hallarCuenta(Request $request)
+    {
+        $p = Cuenta::select('numero_cuenta','id')->where('proveedor_id',$request->id)->take(10)->get();
+        //$request->id
+        return response()->json($p);
+    }
+
 
     /**
      * Show the form for creating a new resource.

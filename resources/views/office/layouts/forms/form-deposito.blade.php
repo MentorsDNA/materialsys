@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <select id="llamar_empresa" name="llamar_empresa" class="form-control">
+                                <select id="llamar_empresa" name="llamar_empresa" class="llamar_empresa">
                                     <option value="">Empresa</option>
 
                                 @foreach($empresas as $empresa)
@@ -49,7 +49,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <label class="control-label">Monto</label>
+                                <label class="control-label"> &nbsp; &nbsp; Monto</label>
                                 <input id="monto" name="monto" type="text" class="form-control">
                             </div>
                         </div>
@@ -61,7 +61,6 @@
                             </div>
                         </div>
                     </div>
-                    <hr width="100%">
                     <button type="submit" class="btn btn-primary pull-right">Guardar</button>
                     <div class="clearfix"></div>
                 </form>

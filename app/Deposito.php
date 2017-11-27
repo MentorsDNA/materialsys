@@ -17,25 +17,5 @@ class Deposito extends Model
 			return $this->belongsTo('App\Cuenta', 'deposito_cuenta_id', 'id');
 		}
 
-	//visualizar
-	public function verProveedor()
-		{
-			return $this->belongsTo('App\Proveedore', 'titular_informacion_id', 'id');
-		}
-
-	//visualizar
-	public function verTitular()
-		{
-			return $this->belongsTo('App\Titulare', 'titular_informacion_id', 'id');
-		}
-
-
-	public static function untitular($id)
-	{
-
-		return Town::where('state_id', '=', $id)
-		->get();
-
-	}
 
 }

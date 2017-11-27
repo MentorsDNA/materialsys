@@ -28,6 +28,16 @@ Route::resource('depositos', 'DepositoController');
 Route::get('proveedores/{id}', 'DepositoController@verProveedor');
 Route::get('cuentas/{id}', 'DepositoController@verCuenta');
 
+//
+Route::get('/prodview','TestController@prodfunct'); 
+Route::get('/findProductName','TestController@findProductName');
+Route::get('/findPrice','TestController@findPrice'); 
+//
+Route::get('/verEmpresa','DepositoController@verEmpresa'); 
+Route::get('/hallarProveedor','DepositoController@hallarProveedor');
+Route::get('/hallarCuenta','DepositoController@hallarCuenta'); 
+//
+
 
 Route::resource('detalle', 'DetalleController');
 Route::resource('caracteristica', 'CaracteristicaController');

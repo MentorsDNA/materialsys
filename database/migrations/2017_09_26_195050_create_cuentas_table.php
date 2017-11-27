@@ -22,6 +22,7 @@ class CreateCuentasTable extends Migration
             $table->foreign('proveedor_id')->references('id')->on('proveedores');
             $table->string('numero_cuenta');
             $table->enum('moneda', ['1', '2', '3', '9']);
+            $table->enum('moneda', ['0', '1', '2', '3'])->comment('1 Soles, 2 Dolares, 3 Bolivianos, 0 Otro');
             $table->timestamps();
 
         });
